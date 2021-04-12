@@ -13,6 +13,12 @@ body {
 
 section .row {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .column {
+  display: flex;
+  flex-direction: column;
 }
 
 section .row .col-3 {
@@ -31,9 +37,27 @@ section .row .col-7 {
   width: 70%;
 }
 
+section .btn-square {
+  display: inline-block;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #0b132a;
+}
+
 .vertical-center {
-  display: flex;
   align-items: center;
+}
+
+.horizontal-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .v-line {
@@ -43,15 +67,37 @@ section .row .col-7 {
 }
 
 .btn {
-  border: none;
-}
-.btn-lg {
-  border-radius: 10px;
-}
-.btn-md {
-  border-radius: 5px;
+  text-decoration: none;
 }
 
+.btn-line-danger {
+  background-color: transparent;
+  border: 1px solid #f53838;
+  color: #f53838;
+}
+
+.btn-square {
+  border: none;
+  border-radius: 7px;
+}
+
+.btn-rounded {
+  border-radius: 20px;
+  border: 1px solid #f53855;
+}
+.btn-lg {
+  padding: 20px 70px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+.btn-md {
+  padding: 10px 40px;
+}
+
+.btn-danger {
+  background-color: #f53838;
+  color: #fff;
+}
 .btn-danger {
   background-color: #f53838;
   color: #fff;
@@ -59,6 +105,10 @@ section .row .col-7 {
 
 .btn-blur {
   box-shadow: 0 18px 20px -12px #f53838;
+}
+
+.m-tb-10 {
+  margin: 10px 0;
 }
 
 @media (min-width: 1440px) {
@@ -95,13 +145,11 @@ section .row .col-7 {
     font-weight: 400;
   }
   nav ul li .nav-sign-item {
-    text-decoration: none;
     color: #0b132a;
     font-weight: 500;
     padding: 10px 40px;
   }
   nav ul li .nav-sign-item.active {
-    text-decoration: none;
     color: #f53855;
     font-weight: 500;
     border-radius: 20px;
@@ -129,13 +177,6 @@ section .row .col-7 {
     font-weight: 300;
     font-size: 15px;
     color: #4f5665;
-  }
-  section .main-content .row .col-5 .btn {
-    padding: 20px 70px;
-    font-weight: bold;
-    letter-spacing: 0.7px;
-    text-decoration: none;
-    display: inline-block;
   }
 
   section .main-content .row .col-5 img {
@@ -206,5 +247,122 @@ section .row .col-7 {
   section .fitur-content ul li span {
     margin-left: 10px;
     font-size: 15px;
+  }
+  section.price {
+    background-image: linear-gradient(to bottom, #f8f8f8, transparent);
+    padding: 40px 0;
+  }
+
+  section.price p {
+    font-size: 15px;
+    margin: 20px 0;
+    color: #4f5665;
+    font-weight: 300;
+    width: 500px;
+    margin: 20px auto;
+  }
+
+  section.price .price-cards {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 20px 35px;
+    border-radius: 8px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.price .price-cards > img {
+    width: 70%;
+  }
+  section.price .price-cards ul {
+    list-style: none;
+    text-align: left;
+    line-height: 35px;
+  }
+  section.price .price-cards ul li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  section.price .price-cards ul li img {
+    margin-right: 7px;
+  }
+  section.price .price-cards .price-tag span span {
+    color: #4f5665;
+  }
+  section.price .price-cards.active {
+    border: 2px solid #f53855;
+    background-color: #fff;
+  }
+  section.price .price-cards.active .btn-line-danger {
+    box-shadow: 0 18px 20px -12px #f53838;
+    background-color: #f53838;
+    color: #fff;
+  }
+
+  section.testimony {
+    background-color: salmon;
+    padding: 40px 0;
+  }
+  section.testimony h3,
+  section.testimony p {
+    width: 500px;
+    margin: 0px auto 35px auto;
+    text-align: center;
+  }
+
+  section.testimony p {
+    font-weight: 300;
+  }
+
+  section.testimony .testimony-wrapper {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+  }
+
+  section.testimony .testimony-wrapper .container-testi {
+    white-space: nowrap;
+    display: block;
+  }
+
+  .container-testi .card-testi {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 0 20px;
+    background-color: khaki;
+    overflow: hidden;
+  }
+
+  .container-testi .card-testi:first-child {
+    margin-left: 10vw;
+  }
+
+  .container-testi .card-testi:last-child {
+    margin-right: 10vw;
+  }
+
+  .testimony-wrapper .container-testi .card-testi .cards-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .testimony-wrapper .container-testi .card-testi .cards-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testimony-wrapper .container-testi .card-testi .card-body p {
+    text-align: left;
+    font-size: 14px;
+    white-space: normal;
+    height: inherit;
+    width: inherit;
   }
 }
