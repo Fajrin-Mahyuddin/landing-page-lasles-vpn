@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   position: relative;
@@ -305,7 +309,6 @@ section h3 {
   }
 
   section.testimony {
-    background-color: salmon;
     padding: 40px 0;
   }
   section.testimony h3,
@@ -323,11 +326,13 @@ section h3 {
     width: 100%;
     display: block;
     overflow-x: scroll;
+    margin-bottom: 20px;
   }
 
   section.testimony .testimony-wrapper .container-testi {
     white-space: nowrap;
     display: block;
+    background-color: salmon;
   }
 
   .container-testi .card-testi {
@@ -336,7 +341,13 @@ section h3 {
     height: 200px;
     margin: 0 20px;
     background-color: khaki;
-    overflow: hidden;
+    /* overflow: hidden; */
+  }
+
+  .container-testi .card-testi.active {
+    border: 1px solid red;
+  }
+  .container-testi .card-testi.active {
   }
 
   .container-testi .card-testi:first-child {
@@ -364,5 +375,30 @@ section h3 {
     white-space: normal;
     height: inherit;
     width: inherit;
+  }
+  .testimony .navigate-wrapper {
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .testimony .navigate-wrapper .dot ul {
+    display: flex;
+    list-style: none;
+  }
+  .testimony .navigate-wrapper .dot ul li {
+    margin: 0 5px;
+  }
+  .testimony .navigate-wrapper .dot ul li::after {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: #4f5665;
+    display: inline-block;
+  }
+  .navigate-wrapper .navigate-btn img {
+    width: 40px;
   }
 }
