@@ -15,11 +15,11 @@
         </div>
         <ul class="nav-menu">
           <!-- just add active class for active link -->
-          <li><a href="#" class="menu-item">About</a></li>
-          <li><a href="#" class="menu-item">Features</a></li>
-          <li><a href="#" class="menu-item">Pricing</a></li>
-          <li><a href="#" class="menu-item">Testimonials</a></li>
-          <li><a href="#" class="menu-item">Help</a></li>
+          <li><a href="#main" class="menu-item">About</a></li>
+          <li><a href="#fiture" class="menu-item">Features</a></li>
+          <li><a href="#price" class="menu-item">Pricing</a></li>
+          <li><a href="#testimony" class="menu-item">Testimonials</a></li>
+          <li><a href="#footer" class="menu-item">Help</a></li>
         </ul>
         <ul class="nav-menu">
           <li><a href="#" class="btn nav-sign-item">Sign In</a></li>
@@ -29,7 +29,7 @@
         </ul>
       </div>
     </nav>
-    <section class="container">
+    <section id="main" class="container">
       <div class="main-content">
         <div class="row vertical-center">
           <div class="col-5">
@@ -46,7 +46,7 @@
             <img src="./assets//images/human-one.svg" alt="human-one" />
           </div>
         </div>
-        <div class="cards-wrapper row">
+        <div class="cards-wrapper">
           <div class="card-item">
             <img src="./assets/images/icons/icon-user.svg" alt="icon-user" />
             <div class="card-content">
@@ -73,15 +73,15 @@
         </div>
       </div>
     </section>
-    <section class="container">
+    <section id="fiture" class="container">
       <div class="fitur-content">
         <div class="row vertical-center">
           <div class="col-6">
             <img src="./assets/images/human-two.svg" alt="" />
           </div>
           <div class="col-4">
-            <h3>We Provide Many Features You Can Use</h3>
-            <p>
+            <h3 class="h-title">We Provide Many Features You Can Use</h3>
+            <p class="p-desc">
               You can explore the features that we provide with fun and have
               their own functions each feature.
             </p>
@@ -119,282 +119,369 @@
         </div>
       </div>
     </section>
-    <section class="price center-text">
-      <div class="container">
-        <h3>Choose Your Plan</h3>
-        <p>
-          Let's choose the package that is best for you and explore it happily
-          and cheerfully.
+    <div class="color-bg">
+      <section id="price" class="price center-text">
+        <div class="container">
+          <h3 class="h-title">Choose Your Plan</h3>
+          <p class="p-desc">
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+          <div class="row vertical-center horizontal-center">
+            <div class="price-cards">
+              <div class="price-head column">
+                <img
+                  src="/assets/images/free-boxsuprice.svg"
+                  alt="free-boxsuprice"
+                />
+                <h5 class="m-tb-10">Free Plan</h5>
+              </div>
+              <ul>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Unlimited Bandwitch
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Encrypted Connection
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />No
+                  Traffic Logs
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />Works
+                  on All Devices
+                </li>
+              </ul>
+              <div class="price-tag column">
+                <span class="m-tb-10">Free</span>
+                <a href="#" class="btn btn-rounded btn-md btn-line-danger"
+                  >Select</a
+                >
+              </div>
+            </div>
+            <div class="price-cards">
+              <div class="price-head column">
+                <img
+                  src="/assets/images/standard-boxsuprice.svg"
+                  alt="free-boxsuprice"
+                />
+                <h5 class="m-tb-10">Standard Plan</h5>
+              </div>
+              <ul>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Unlimited Bandwitch
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Encrypted Connection
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />Yes
+                  Traffic Logs
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />Works
+                  on All Devices
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Connect Anyware
+                </li>
+              </ul>
+              <div class="price-tag column">
+                <span class="m-tb-10">$10 <span>/ Mo</span></span>
+                <a href="#" class="btn btn-rounded btn-md btn-line-danger"
+                  >Select</a
+                >
+              </div>
+            </div>
+            <div class="price-cards active">
+              <div class="price-head column">
+                <img
+                  src="/assets/images/premium-boxsuprice.svg"
+                  alt="free-boxsuprice"
+                />
+                <h5 class="m-tb-10">Premium Plan</h5>
+              </div>
+              <ul>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Unlimited Bandwitch
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Encrypted Connection
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />Yes
+                  Traffic Logs
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />Works
+                  on All Devices
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="check"
+                  />Connect Anyware
+                </li>
+                <li>
+                  <img src="./assets/images/icons/check.svg" alt="check" />Get
+                  New Features
+                </li>
+              </ul>
+              <div class="price-tag column">
+                <span class="m-tb-10">$30 <span>/ Mo</span></span>
+                <a href="#" class="btn btn-rounded btn-md btn-line-danger"
+                  >Select</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="network">
+        <div class="container">
+          <h3 class="h-title">Huge Global Network of Fast VPN</h3>
+          <p class="p-desc">
+            See LaslesVPN everywhere to make it easier for you when you move
+            locations.
+          </p>
+          <img src="./assets/images/network.svg" alt="network" />
+        </div>
+      </section>
+      <section class="our-partner">
+        <div class="container">
+          <div class="our-partner-brand">
+            <img src="./assets/images/netflix.svg" alt="netflix" />
+            <img src="./assets/images/reddit.svg" alt="netflix" />
+            <img src="./assets/images/amazon.svg" alt="netflix" />
+            <img src="./assets/images/discord.svg" alt="netflix" />
+            <img src="./assets/images/spotify.svg" alt="netflix" />
+          </div>
+        </div>
+      </section>
+
+      <section id="testimony" class="testimony">
+        <h3 class="h-title">Trusted by Thousands of Happy Customer</h3>
+        <p class="p-desc">
+          These are the stories of our customers who have joined us with great
+          pleasure when using this crazy feature.
         </p>
-        <div class="row vertical-center horizontal-center">
-          <div class="price-cards">
-            <div class="price-head column">
-              <img
-                src="/assets/images/free-boxsuprice.svg"
-                alt="free-boxsuprice"
-              />
-              <h5 class="m-tb-10">Free Plan</h5>
+        <div class="testimony-wrapper" id="testimony-wrapper">
+          <div class="container-testi">
+            <!-- one -->
+            <div class="card-testi card-testi1 active">
+              <div class="cards-head">
+                <div class="row">
+                  <img
+                    src="./assets/images/testi-profil.svg"
+                    alt="testi-profil"
+                  />
+                  <div class="name-tag">
+                    <div>Fajrin Mahyuddin</div>
+                    <div>Warsaw, Poland</div>
+                  </div>
+                </div>
+                <div class="score-tag row">
+                  <span>4.5</span>
+                  <img src="./assets/images/icons/star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
             </div>
-            <ul>
-              <li>
-                <img
-                  src="./assets/images/icons/check.svg"
-                  alt="check"
-                />Unlimited Bandwitch
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/check.svg"
-                  alt="check"
-                />Encrypted Connection
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />No
-                Traffic Logs
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Works
-                on All Devices
-              </li>
-            </ul>
-            <div class="price-tag column">
-              <span class="m-tb-10">Free</span>
-              <a href="#" class="btn btn-rounded btn-md btn-line-danger"
-                >Select</a
-              >
+            <!-- end one -->
+            <!-- two -->
+            <div class="card-testi card-testi2">
+              <div class="cards-head">
+                <div class="row">
+                  <img
+                    src="./assets/images/testi-profile-two.svg"
+                    alt="testi-profil-two"
+                  />
+                  <div class="name-tag">
+                    <div>Yessica Christy</div>
+                    <div>Shanxi, China</div>
+                  </div>
+                </div>
+                <div class="score-tag row">
+                  <span>4.5</span>
+                  <img src="./assets/images/icons/star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  “I like it because I like to travel far and still can connect
+                  with high speed.”.
+                </p>
+              </div>
+            </div>
+            <!-- end two -->
+            <!-- three -->
+            <div class="card-testi card-testi3">
+              <div class="cards-head">
+                <div class="row">
+                  <img
+                    src="./assets/images/testi-profil.svg"
+                    alt="testi-profil"
+                  />
+                  <div class="name-tag">
+                    <div>Fajrin Mahyuddin</div>
+                    <div>Warsaw, Poland</div>
+                  </div>
+                </div>
+                <div class="score-tag">
+                  <div>4.5</div>
+                  <img src="./assets/images/icons/star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  “This is very unusual for my business that currently requires
+                  a virtual private network that has high security”.
+                </p>
+              </div>
+            </div>
+            <!-- end three -->
+            <!-- four -->
+            <div class="card-testi card-testi4">
+              <div class="cards-head">
+                <div class="row">
+                  <img
+                    src="./assets/images/testi-profil.svg"
+                    alt="testi-profil"
+                  />
+                  <div class="name-tag">
+                    <div>Fajrin Mahyuddin</div>
+                    <div>Warsaw, Poland</div>
+                  </div>
+                </div>
+                <div class="score-tag row">
+                  <span>4.5</span>
+                  <img src="./assets/images/icons/star.svg" alt="star" />
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  “Wow... I am very happy to use this VPN, it turned out to be
+                  more than my expectations and so far there have been no
+                  problems. LaslesVPN always the best”.
+                </p>
+              </div>
+            </div>
+            <!-- end four -->
+          </div>
+        </div>
+        <div class="navigate-wrapper">
+          <div class="dot row"></div>
+          <div class="navigate-btn">
+            <img
+              src="./assets/images/icons/prev-btn.svg"
+              id="prev-btn"
+              class="prev-btn"
+              alt="prev-btn"
+            />
+            <img
+              src="./assets/images/icons/next-btn.svg"
+              id="next-btn"
+              class="next-btn"
+              alt="next-btn"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="subscribe-card">
+          <div class="subscribe-text">
+            <h3>Subscribe Now for Get Special Features!</h3>
+            <p>Let's subscribe with us and find the fun.</p>
+          </div>
+          <div class="subscribe-btn">
+            <a href="#" class="btn btn-square btn-blur btn-danger btn-lg"
+              >Subscribe Now</a
+            >
+          </div>
+        </div>
+        <div class="row pt-60">
+          <div class="col col-55 mr-40">
+            <img
+              src="./assets/images/Logo.svg"
+              class="footer-logo"
+              alt="footer logo"
+            />
+            <p>
+              <strong>LaslesVPN</strong> is a private virtual network that has
+              unique features and has high security.
+            </p>
+            <div class="social-media">
+              <img src="./assets/images/icons/facebook.svg" alt="facebook" />
+              <img src="./assets/images/icons/twitter.svg" alt="twitter" />
+              <img src="./assets/images/icons/instagram.svg" alt="instagram" />
+            </div>
+            <div class="copy-right">
+              &copy;2021 LaslesVPN | design by
+              <a href="https://twitter.com/didiikurniawann">@didiikurniawann</a>
             </div>
           </div>
-          <div class="price-cards">
-            <div class="price-head column">
-              <img
-                src="/assets/images/standard-boxsuprice.svg"
-                alt="free-boxsuprice"
-              />
-              <h5 class="m-tb-10">Standard Plan</h5>
-            </div>
+          <div class="col col-15 mr-30">
+            <h5>Product</h5>
             <ul>
-              <li>
-                <img
-                  src="./assets/images/icons/check.svg"
-                  alt="check"
-                />Unlimited Bandwitch
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/check.svg"
-                  alt="check"
-                />Encrypted Connection
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Yes
-                Traffic Logs
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Works
-                on All Devices
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Connect
-                Anyware
-              </li>
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Server</a></li>
+              <li><a href="#">Countries</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
-            <div class="price-tag column">
-              <span class="m-tb-10">$10 <span>/ Mo</span></span>
-              <a href="#" class="btn btn-rounded btn-md btn-line-danger"
-                >Select</a
-              >
-            </div>
           </div>
-          <div class="price-cards active">
-            <div class="price-head column">
-              <img
-                src="/assets/images/premium-boxsuprice.svg"
-                alt="free-boxsuprice"
-              />
-              <h5 class="m-tb-10">Premium Plan</h5>
-            </div>
+          <div class="col col-15">
+            <h5>Engage</h5>
             <ul>
-              <li>
-                <img
-                  src="./assets/images/icons/check.svg"
-                  alt="check"
-                />Unlimited Bandwitch
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/check.svg"
-                  alt="check"
-                />Encrypted Connection
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Yes
-                Traffic Logs
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Works
-                on All Devices
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Connect
-                Anyware
-              </li>
-              <li>
-                <img src="./assets/images/icons/check.svg" alt="check" />Get New
-                Features
-              </li>
+              <li><a href="#">LaslesVPN ?</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term of Service</a></li>
             </ul>
-            <div class="price-tag column">
-              <span class="m-tb-10">$30 <span>/ Mo</span></span>
-              <a href="#" class="btn btn-rounded btn-md btn-line-danger"
-                >Select</a
-              >
-            </div>
+          </div>
+          <div class="col col-15 ml-30">
+            <h5>Earn Money</h5>
+            <ul>
+              <li><a href="#">Affiliate</a></li>
+              <li><a href="#">Become Partner</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <section class="testimony">
-      <h3>Trusted by Thousands of Happy Customer</h3>
-      <p>
-        These are the stories of our customers who have joined us with great
-        pleasure when using this crazy feature.
-      </p>
-      <div class="testimony-wrapper" id="testimony-wrapper">
-        <div class="container-testi">
-          <!-- one -->
-          <div class="card-testi card-testi1">
-            <div class="cards-head">
-              <div class="row">
-                <img
-                  src="./assets/images/testi-profil.svg"
-                  alt="testi-profil"
-                />
-                <div class="name-tag">
-                  <div>Fajrin Mahyuddin</div>
-                  <div>Warsaw, Poland</div>
-                </div>
-              </div>
-              <div class="score-tag row">
-                <span>4.5</span>
-                <img src="./assets/images/icons/star.png" alt="star" />
-              </div>
-            </div>
-            <div class="card-body">
-              <p>
-                “Wow... I am very happy to use this VPN, it turned out to be
-                more than my expectations and so far there have been no
-                problems. LaslesVPN always the best”.
-              </p>
-            </div>
-          </div>
-          <!-- end one -->
-          <!-- two -->
-          <div class="card-testi card-testi2 active">
-            <div class="cards-head">
-              <div class="row">
-                <img
-                  src="./assets/images/testi-profil.svg"
-                  alt="testi-profil"
-                />
-                <div class="name-tag">
-                  <div>Fajrin Mahyuddin</div>
-                  <div>Warsaw, Poland</div>
-                </div>
-              </div>
-              <div class="score-tag row">
-                <span>4.5</span>
-                <img src="./assets/images/icons/star.png" alt="star" />
-              </div>
-            </div>
-            <div class="card-body">
-              <p>
-                “Wow... I am very happy to use this VPN, it turned out to be
-                more than my expectations and so far there have been no
-                problems. LaslesVPN always the best”.
-              </p>
-            </div>
-          </div>
-          <!-- end two -->
-          <!-- three -->
-          <div class="card-testi card-testi3">
-            <div class="cards-head">
-              <div class="row">
-                <img
-                  src="./assets/images/testi-profil.svg"
-                  alt="testi-profil"
-                />
-                <div class="name-tag">
-                  <div>Fajrin Mahyuddin</div>
-                  <div>Warsaw, Poland</div>
-                </div>
-              </div>
-              <div class="score-tag row">
-                <span>4.5</span>
-                <img src="./assets/images/icons/star.png" alt="star" />
-              </div>
-            </div>
-            <div class="card-body">
-              <p>
-                “Wow... I am very happy to use this VPN, it turned out to be
-                more than my expectations and so far there have been no
-                problems. LaslesVPN always the best”.
-              </p>
-            </div>
-          </div>
-          <!-- end three -->
-          <!-- four -->
-          <div class="card-testi card-testi4">
-            <div class="cards-head">
-              <div class="row">
-                <img
-                  src="./assets/images/testi-profil.svg"
-                  alt="testi-profil"
-                />
-                <div class="name-tag">
-                  <div>Fajrin Mahyuddin</div>
-                  <div>Warsaw, Poland</div>
-                </div>
-              </div>
-              <div class="score-tag row">
-                <span>4.5</span>
-                <img src="./assets/images/icons/star.png" alt="star" />
-              </div>
-            </div>
-            <div class="card-body">
-              <p>
-                “Wow... I am very happy to use this VPN, it turned out to be
-                more than my expectations and so far there have been no
-                problems. LaslesVPN always the best”.
-              </p>
-            </div>
-          </div>
-          <!-- end four -->
-        </div>
-      </div>
-      <div class="navigate-wrapper">
-        <div class="dot">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="navigate-btn">
-          <img
-            src="./assets/images/icons/prev-btn.svg"
-            id="prev-btn"
-            class="prev-btn"
-            alt="prev-btn"
-          />
-          <img
-            src="./assets/images/icons/next-btn.svg"
-            id="next-btn"
-            class="next-btn"
-            alt="next-btn"
-          />
-        </div>
-      </div>
-    </section>
+    </footer>
     <script src="./assets/js/style.js" type="module"></script>
   </body>
 </html>
