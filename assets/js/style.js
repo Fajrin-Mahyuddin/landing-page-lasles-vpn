@@ -62,3 +62,16 @@ const slideToRight = (e) => {
 
 prev.addEventListener("click", slideToRight);
 next.addEventListener("click", slideToLeft);
+
+let hamburger = document.getElementById(`hamburger`);
+let close = document.getElementById(`close`);
+let menus = document.querySelector(`.menu`);
+
+hamburger.addEventListener("click", () => {
+  console.log("ok", menus);
+  menus.style.display = "flex";
+});
+close.addEventListener("click", () => {
+  console.log("ok", menus);
+  menus.style.display = "none";
+});
