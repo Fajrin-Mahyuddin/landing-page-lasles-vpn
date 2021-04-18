@@ -63,15 +63,31 @@ const slideToRight = (e) => {
 prev.addEventListener("click", slideToRight);
 next.addEventListener("click", slideToLeft);
 
+let nav = document.querySelector(`nav`);
 let hamburger = document.getElementById(`hamburger`);
 let close = document.getElementById(`close`);
 let menus = document.querySelector(`.menu`);
+let nav_menu = document.querySelectorAll(`.nav-menu li a`);
 
 hamburger.addEventListener("click", () => {
-  console.log("ok", menus);
-  menus.style.display = "flex";
+  menus.style.transform = "translateX(0)";
 });
+
 close.addEventListener("click", () => {
-  console.log("ok", menus);
-  menus.style.display = "none";
+  menus.style.transform = "translateX(100%)";
 });
+
+window.onclick = (e) => {
+  let target = e.target.classList.item(0);
+  if (target === "nav-link") {
+    menus.style.transform = "translateX(100%)";
+  }
+};
+
+window.onscroll = () => {
+  if (window.pageYOffset > nav.offsetTop) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+};
