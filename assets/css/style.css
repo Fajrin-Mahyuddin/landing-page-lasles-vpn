@@ -178,10 +178,11 @@ section {
     align-items: center;
     height: 90px;
   }
-  .navbar .menu {
+  nav .navbar .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: translateX(0) !important;
   }
   nav ul {
     display: flex;
@@ -585,6 +586,16 @@ section {
 }
 
 @media (max-width: 1024px) {
+  nav.dark::after {
+    content: " ";
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   .btn {
     text-decoration: none;
   }
@@ -655,7 +666,7 @@ section {
     padding: 0 15px;
   }
   nav {
-    z-index: 8;
+    z-index: 7;
     width: 100%;
   }
 
@@ -665,7 +676,7 @@ section {
   }
 
   nav.sticky .navbar {
-    height: 10vh;
+    height: 8vh;
   }
 
   nav .navbar {
@@ -699,6 +710,7 @@ section {
     background-color: #fff;
     transform: translateX(100%);
     z-index: 9;
+    box-shadow: 0px 15px 25px -5px rgba(0, 0, 0, 0.2);
   }
 
   nav .navbar .menu .close-btn {
